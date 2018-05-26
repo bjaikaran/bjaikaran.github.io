@@ -1,0 +1,41 @@
+<script>// JavaScript Document    
+    $('.dropdown').on('show.bs.dropdown', function(e){$(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);});$('.dropdown').on('hide.bs.dropdown', function(e){$(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);});</script>
+ <!-- Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-md navbar-dark bg-dark p-0 m-0" style="width: 100%; box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.49);margin-bottom: 5px;"
+        id="header-nav">
+        <!--nvbLogo-->
+        <div class="navbar-brand bg-info">
+            <a class="nav-link" href="/index.html"><strong class="m-0 text-center float-right text-light p-3" style="vertical-align: middle">Latitude</strong></a>
+        </div>
+        <!--nvbLogo-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="vertical-align: middle; margin: 10px;">
+            <span class="navbar-toggler-icon p-1"></span>
+        </button>
+        <div class="float-right collapse navbar-collapse p-2" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <!-- drpdwn Start-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" data-toggle="dropdown" id="navbardrop">Plots </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/comparisons.html#temp">Max Temperature</a>
+                        <a class="dropdown-item" href="/comparisons.html#humid">Humidity</a>
+                        <a class="dropdown-item" href="/comparisons.html#clouds">Cloudiness</a>
+                        <a class="dropdown-item" href="/comparisons.html#wind">Windspeed</a>
+                    </div>
+                </li>
+                <!-- drpdwn End-->
+                <li class="nav-item">
+                    <a class="nav-link" href="/comparisons.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--/ Navbar end-->
+    <br />
+    <br />
+    <br />
+    <br />
+    
